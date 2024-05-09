@@ -1,0 +1,8 @@
+cryptography
+objectpath
+ordereddict
+simplejson
+paramiko
+jinja2
+netaddr
+packaging
