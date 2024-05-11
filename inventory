@@ -1,1 +1,1 @@
-f5  ansible_host=192.168.67.28 ansible_user=admin ansible_ssh_pass=Ansible123 server_port=443
+f5  ansible_host=192.168.67.28 ansible_user=admin ansible_ssh_pass=Ansible123 server_port=443 web=[server1,server2] private_ip=192.168.67.100
