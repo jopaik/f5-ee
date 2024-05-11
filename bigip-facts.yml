@@ -3,7 +3,7 @@
   hosts: f5
   connection: local
   gather_facts: false
-      - name: Setting up provider values
+
   vars:
     provider:
       server: "{{ ansible_host }}"
