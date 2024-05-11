@@ -1,9 +1,8 @@
 ---
 ansible-navigator:
-
   execution-environment:
     container-engine: podman
-    enabled: true
+    enabled: True
     environment-variables:
       pass:
       - ONE
@@ -15,6 +14,8 @@ ansible-navigator:
         KEY3: VALUE3
     image: f5-ee:latest
     pull:
+      arguments:
+        - "--tls-verify=false"
       policy: never
 
   logging:
