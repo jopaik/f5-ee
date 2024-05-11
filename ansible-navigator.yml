@@ -3,25 +3,12 @@ ansible-navigator:
   execution-environment:
     container-engine: podman
     enabled: True
-    environment-variables:
-      pass:
-      - ONE
-      - TWO
-      - THREE
-      set:
-        KEY1: VALUE1
-        KEY2: VALUE2
-        KEY3: VALUE3
     image: f5-ee:latest
     pull:
       arguments:
         - "--tls-verify=false"
       policy: never
-
   logging:
     level: critical
-
   playbook-artifact:
     enabled: false
-
-  mode: stdout
