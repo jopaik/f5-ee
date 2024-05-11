@@ -1,5 +1,6 @@
 ---
 ansible-navigator:
+
   execution-environment:
     container-engine: podman
     enabled: true
@@ -15,8 +16,11 @@ ansible-navigator:
     image: f5-ee:latest
     pull:
       policy: never
+
   logging:
     level: critical
+
   playbook-artifact:
     enabled: false
+
   mode: stdout
