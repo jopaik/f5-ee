@@ -19,3 +19,4 @@ ansible-navigator:
     level: critical
   playbook-artifact:
     enabled: false
+  mode: stdout
