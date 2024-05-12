@@ -3,7 +3,8 @@
   hosts: f5
   connection: local
   gather_facts: false
-
+  vars_files:
+    - f5_vars.yml
 #Environment variables defined
   tasks:
   - name: Setup provider
