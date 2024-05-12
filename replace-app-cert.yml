@@ -33,7 +33,7 @@
       state: present
       pool: "{{ F5_VIP_Name }}_pool"
       name: "{{ hostvars[item].inventory_hostname }}"
-      host: "{{ hostvars[item].private_ip }}"
+      host: "{{ hostvars[item].ansible_host }}"
       port: "80"
     loop: "{{ groups['web'] }}"
 
